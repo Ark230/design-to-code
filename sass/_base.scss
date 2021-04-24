@@ -1,0 +1,34 @@
+:root{
+    //primary colors
+    --color-primary-luna:#FBEFEC;
+    --color-primary-harry:#215E99;
+    --color-primary-hagrid:#000000;
+    --color-primary-hermione:#EC552F;
+
+    //secondary colors
+    --color-primary-dobby:#FFFFFF;
+    --color-primary-Ron:#FFF7ED;
+    --color-primary-Severus:#7F8E9D;
+    --color-primary-Voldemort:#C7CAD9;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+
+}

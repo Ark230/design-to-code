@@ -1,0 +1,50 @@
+.login-content{
+    display: flex;
+}
+
+.business-design{
+    width: 50%;
+    height: 100vh;
+    padding: 5rem;
+    background-color: var(--color-primary-luna);
+    :not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    &__logo{
+        font-size: 2.5rem;
+
+        &--first{
+            color: var(--color-primary-harry);
+            background-color: var(--color-primary-hermione);
+            border-radius: 50%;
+            padding: 1.1rem;
+        }
+
+        &--second{
+            display: inline-block;
+            color:var(--color-primary-dobby);
+            background-color: var(--color-primary-harry);
+            border-radius: 500px;
+            padding: 1.2rem;
+            width: 12rem;
+            z-index: 10;
+            
+        }
+
+        &--second{
+
+
+        }
+    }
+
+    &__header{
+        width: 60%;
+        color: var(--color-primary-harry);
+        font-size: 1.5rem;
+    }
+}
+
+.user-credentials{
+    width: 50%;
+}

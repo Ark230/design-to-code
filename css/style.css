@@ -1,0 +1,55 @@
+:root {
+  --color-primary-luna:#FBEFEC;
+  --color-primary-harry:#215E99;
+  --color-primary-hagrid:#000000;
+  --color-primary-hermione:#EC552F;
+  --color-primary-dobby:#FFFFFF;
+  --color-primary-Ron:#FFF7ED;
+  --color-primary-Severus:#7F8E9D;
+  --color-primary-Voldemort:#C7CAD9; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+.login-content {
+  display: flex; }
+
+.business-design {
+  width: 50%;
+  height: 100vh;
+  padding: 5rem;
+  background-color: var(--color-primary-luna); }
+  .business-design :not(:last-child) {
+    margin-bottom: 2rem; }
+  .business-design__logo {
+    font-size: 2.5rem; }
+    .business-design__logo--first {
+      color: var(--color-primary-harry);
+      background-color: var(--color-primary-hermione);
+      border-radius: 50%;
+      padding: 1.1rem; }
+    .business-design__logo--second {
+      display: inline-block;
+      color: var(--color-primary-dobby);
+      background-color: var(--color-primary-harry);
+      border-radius: 500px;
+      padding: 1.2rem;
+      width: 12rem;
+      z-index: 10; }
+  .business-design__header {
+    width: 60%;
+    color: var(--color-primary-harry);
+    font-size: 1.5rem; }
+
+.user-credentials {
+  width: 50%; }
