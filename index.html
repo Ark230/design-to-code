@@ -5,27 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Be positive</title>
+    <script src="./js/script.js"></script>
+    <title>Be positivite</title>
 </head>
 
 <body>
 
         <main>
+            <div id="notification" class="notification-success">Felicidades te haz registrado exitosamente.</div>
+
+
             <div class="login-content">
                 <div class="business-design">
                     <div class="business-design__logo">
                         <span class="business-design__logo--first">be</span>
-                        <span class="business-design__logo--second">positive</span>
+                        <span class="business-design__logo--second">positivite</span>
                     </div>
     
                     <div class="business-design__header">
-                        <h1>Gestiona a tus seguidores de forma segura</h1>
+                        <h1 class="heading-primary">Gestiona a tus seguidores de forma segura</h1>
                     </div>
                 </div>
     
-                <div class="user-credentials">
-                    <h2>User Credentials space</h2>
-                </div>
+
+                <div id="user-credentials-sign-in" class="user-credentials">
+                    <div class="user-credentials__container">
+                        <form class="user-credentials__form" action="#">
+                            <h2 class="heading-secondary">Bienvenido</h2>
+                            <h3 class="heading-tertiary">Inicie sesión ingresando su cuenta aquí</h3>
+                            
+                            <div class="user-credentials__input-container">
+                                <label class="user-credentials__label">Email/Nombre de usuario</label>
+                                <input class="user-credentials__input" name="email" placeholder="Ingresa email o nombre de usuario">
+                            </div>
+    
+                            <div class="user-credentials__input-container">
+                                <label class="user-credentials__label">Contraseña</label>
+                                <input class="user-credentials__input" type="password" name="password" placeholder="Ingresa contraseña">
+                            </div>
+    
+                            <a href="#" class="user-credentials__forgot-password">¿Olvidaste tu contraseña?</a>
+                           
+                            <button id="sign-in-button" class="btn btn-primary">Iniciar Sesión</button>
+    
+                            <div class="user-credentials__social">
+                                <p>O inicia sesión con otra cuenta</p>
+                                <div class="user-credentials__icons-container">
+                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-apple.svg" alt="apple icon"></a>
+                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></a>
+                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-google.svg" alt="google icon"></a>
+                                </div>
+                            </div>
+    
+                         
+                        </form>
+
+                        <div class="user-credentials__link">
+                            <span>¿Eres un nuevo usuario? <a href="#" id="register-link">Crea una cuenta</a></span>
+                        </div>
+
+                    </div>  
+
+                </div> 
+
+
+                <div id="user-credentials-register" class="user-credentials hide">
+                    <div class="user-credentials__container">
+                        <form class="user-credentials__form" action="#">
+                            <h2 class="heading-secondary">Registrarse en be positivite</h2>
+                            
+                            
+                            <div class="user-credentials__input-container">
+                                <label class="user-credentials__label">Email/Nombre de usuario</label>
+                                <input class="user-credentials__input" type="email" name="email" placeholder="Ingresa email o nombre de usuario">
+                            </div>
+
+                            <div class="user-credentials__input-container">
+                                <label class="user-credentials__label">Nombre</label>
+                                <input class="user-credentials__input" name="email" placeholder="Ingresa nombre">
+                            </div>
+    
+                            <div class="user-credentials__input-container">
+                                <label class="user-credentials__label">Contraseña</label>
+                                <input class="user-credentials__input" type="password" name="password" placeholder="Ingresa contraseña">
+                            </div>
+                           
+                            <div class="user-credentials__input-container">
+                                <input type="checkbox" name="password" placeholder="Ingresa contraseña">
+                                <label for="terms" >Aceptar términos y condiciones</label>
+                            </div>
+
+
+                            <button id="register-button" class="btn btn-primary">Crear una cuenta</button>
+                            
+    
+                            <div class="user-credentials__social">
+                                <p>O registrarse con otra cuenta</p>
+                                 <div class="user-credentials__icons-container">
+                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-apple.svg" alt="apple icon"></a>
+                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></a>
+                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-google.svg" alt="google icon"></a>
+                                </div>
+                            </div>
+    
+                         
+                        </form>
+
+                        <div class="user-credentials__link">
+                            <span>¿Ya eres usuario? <a href="#" id="sign-in-link">Ingresa</a></span>
+                        </div>
+
+                    </div>  
+
+                </div> 
+
+
+
             </div>
         
             

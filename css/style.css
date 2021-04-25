@@ -3,10 +3,10 @@
   --color-primary-harry:#215E99;
   --color-primary-hagrid:#000000;
   --color-primary-hermione:#EC552F;
-  --color-primary-dobby:#FFFFFF;
-  --color-primary-Ron:#FFF7ED;
-  --color-primary-Severus:#7F8E9D;
-  --color-primary-Voldemort:#C7CAD9; }
+  --color-secondary-dobby:#FFFFFF;
+  --color-secondary-Ron:#FFF7ED;
+  --color-secondary-severus:#7F8E9D;
+  --color-secondary-voldemort:#C7CAD9; }
 
 * {
   margin: 0;
@@ -21,6 +21,38 @@ html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
+.btn {
+  width: 100%;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer; }
+
+.btn-primary {
+  color: var(--color-secondary-dobby);
+  background-color: var(--color-primary-harry); }
+
+.notification-success {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  text-align: center;
+  color: var(--color-secondary-dobby);
+  font-size: 1.8rem;
+  height: 5rem;
+  transition: transform 1s;
+  animation: notification-deploy 1s ease-in;
+  width: 100%; }
+
+@keyframes notification-deploy {
+  10% {
+    transform: translateY(-60px); }
+  100% {
+    transform: translateY(0px); } }
+
 .login-content {
   display: flex; }
 
@@ -30,26 +62,109 @@ html {
   padding: 5rem;
   background-color: var(--color-primary-luna); }
   .business-design :not(:last-child) {
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
   .business-design__logo {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: 4rem; }
     .business-design__logo--first {
+      position: absolute;
+      font-weight: 600;
       color: var(--color-primary-harry);
       background-color: var(--color-primary-hermione);
       border-radius: 50%;
-      padding: 1.1rem; }
+      padding: 1.1rem;
+      z-index: 20; }
     .business-design__logo--second {
+      margin-left: 3.8rem;
+      bottom: -42%;
+      left: 6%;
+      font-weight: 600;
       display: inline-block;
-      color: var(--color-primary-dobby);
+      color: var(--color-secondary-dobby);
       background-color: var(--color-primary-harry);
       border-radius: 500px;
       padding: 1.2rem;
       width: 12rem;
-      z-index: 10; }
+      z-index: 1; }
   .business-design__header {
     width: 60%;
     color: var(--color-primary-harry);
     font-size: 1.5rem; }
 
+.hide {
+  display: none !important; }
+
 .user-credentials {
+  display: flex;
+  justify-content: center;
   width: 50%; }
+  .user-credentials__container {
+    padding: 8rem;
+    font-size: 1.5rem;
+    position: relative; }
+    .user-credentials__container .heading-secondary {
+      color: var(--color-primary-hermione);
+      margin-bottom: 1rem; }
+    .user-credentials__container .heading-tertiary {
+      color: var(--color-primary-hermione);
+      margin-bottom: 4rem;
+      font-weight: 100; }
+  .user-credentials__form {
+    width: 35rem;
+    font-size: inherit;
+    margin-top: 6rem; }
+  .user-credentials__input-container {
+    margin-bottom: 2rem;
+    font-weight: 100; }
+  .user-credentials__label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--color-primary-harry);
+    font-weight: inherit; }
+  .user-credentials__input {
+    width: 100%;
+    padding: 1rem;
+    font-weight: inherit;
+    border: 1px solid var(--color-secondary-voldemort);
+    border-radius: 4px; }
+    .user-credentials__input::placeholder {
+      color: var(--color-secondary-severus); }
+    .user-credentials__input:focus {
+      border: 1px solid var(--color-secondary-voldemort); }
+  .user-credentials__forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: var(--color-primary-harry);
+    text-align: right;
+    margin-bottom: 2rem; }
+  .user-credentials__social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--color-primary-hermione); }
+  .user-credentials__icons-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly; }
+  .user-credentials__icon {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    background-color: rgba(199, 202, 217, 0.32); }
+  .user-credentials__link {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    color: var(--color-primary-harry); }
+    .user-credentials__link span > a {
+      color: var(--color-primary-hermione);
+      text-decoration: none; }
