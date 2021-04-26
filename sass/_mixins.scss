@@ -1,0 +1,22 @@
+
+//Media Query Manager
+/*
+    0-600px: Phone
+    600px+: Desktop
+
+*/
+
+@mixin respond-phone{
+    @media (max-width: 600px){@content};
+}
+
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone{
+        @media (max-width: 600px){@content};
+    }
+}
+
+
+
+

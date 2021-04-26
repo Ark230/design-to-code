@@ -1,0 +1,87 @@
+.form{
+    // border: 1px solid black;
+     width: 35rem;
+     font-size: inherit;
+     margin-top: 6rem;
+
+
+     @include respond(phone){
+        margin: 0 auto;
+        width: 80%;
+     };
+
+     
+    &__group{
+        margin-bottom: 2rem;
+        font-weight: 100;
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: 1rem;
+        color: var(--color-primary-harry);
+        font-weight: inherit;
+    }
+
+    &__forgot-password{
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: var(--color-primary-harry);
+        text-align: right;
+        margin-bottom: 2rem;
+      
+    }
+   
+   
+    &__social{
+        display:flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        text-align: center;
+        color: var(--color-primary-hermione);
+    }
+
+    &__input{
+        width: 100%;
+        padding: 1rem;
+        font-weight: inherit;
+        border: 1px solid var(--color-secondary-voldemort);
+        border-radius: 4px;
+   
+        &::placeholder{
+            color: var(--color-secondary-severus);
+        }
+   
+        &:focus{
+            border: 1px solid var(--color-secondary-voldemort);
+        }
+   
+    }
+   
+    
+   
+    &__icons-container{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+   
+    &__icon{
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        min-width: 5rem;
+        background-color: rgba(199,202,217,.32);
+   
+   
+    }
+
+ }
+
+
+
+
+ 
+

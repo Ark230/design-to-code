@@ -12,7 +12,7 @@
 <body>
 
         <main>
-            <div id="notification" class="notification-success">Felicidades te haz registrado exitosamente.</div>
+            <div id="notification" class="notification-success hide">Felicidades te haz registrado exitosamente.</div>
 
 
             <div class="login-content">
@@ -25,6 +25,109 @@
                     <div class="business-design__header">
                         <h1 class="heading-primary">Gestiona a tus seguidores de forma segura</h1>
                     </div>
+
+                    <div class="user-credentials-mobile hide">
+                        <div class="user-credentials-mobile__heading-container">
+                            <h2 class="heading-tertiary">Bienvenido!</h2>
+                            <h3 class="heading-secondary">Conecta con tus seguidores</h3>
+                        </div>
+
+                        <div class="user-credentials-mobile__btn-container">
+                            <button class="btn btn-primary">Iniciar Sesión</button>
+                            <button class="btn btn-secondary">Iniciar sesión con otra cuenta</button>
+                        </div>
+
+                        <div class="user-credentials__link">
+                            <span>¿Eres un nuevo usuario? <a href="#" id="register-linketo2">Crea una cuenta</a></span>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="user-credentials-mobile-sign-in u-margin-top-medium hide">
+                        <h3 class="heading-secondary--form u-margin-bottom-medium ">Inicie sesión para utilizar la aplicación</h3>
+
+                        <form class="form u-margin-bottom-medium" action="#"> 
+                            <div class="form__group">
+                                <label class="form__label">Email/Nombre de usuario</label>
+                                <input class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
+                            </div>
+    
+                            <div class="form__group">
+                                <label class="form__label">Contraseña</label>
+                                <input class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                            </div>
+    
+                            <a href="#" class="form__forgot-password">¿Olvidaste tu contraseña?</a>
+                           
+                            <div class="form__group">
+                                <button id="sign-in-button-2" class="btn btn-tertiary">Iniciar Sesión</button>
+                            </div>
+
+                            <div class="form__group">
+                                <button id="sign-in-button-3" class="btn btn-quaternary">Iniciar sesión con otra cuenta</button>
+                            </div>
+                            
+
+                        </form>
+
+                        
+                        <div class="user-credentials__link">
+                            <span>¿Eres un nuevo usuario? <a href="#" id="register-link">Crea una cuenta</a></span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="user-credentials-mobile-sign-in u-margin-top-medium">
+                        <h3 class="heading-secondary--form u-margin-bottom-medium">Registrarse en be positivite</h3>
+
+                        <form class="form u-margin-bottom-medium" action="#"> 
+                            <div class="form__group">
+                                <label class="form__label">Email/Nombre de usuario</label>
+                                <input class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
+                            </div>
+    
+                            <div class="form__group">
+                                <label class="user-credentials__label">Nombre</label>
+                                <input class="user-credentials__input" name="name" placeholder="Ingresa nombre">
+                            </div>
+    
+                            <div class="form__group">
+                                <label class="form__label">Contraseña</label>
+                                <input class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="checkbox" name="terms">
+                                <label for="terms" >Aceptar términos y condiciones</label>
+                            </div>
+
+                            <div class="form__group">
+                                <button id="sign-in-button-2" class="btn btn-tertiary">Crear una cuenta</button>
+                            </div>
+
+                            <div class="form__group">
+                                <button id="sign-in-button-3" class="btn btn-quaternary">Registrarse con otra cuenta</button>
+                            </div>
+
+
+                            
+
+                        </form>
+
+                        
+                        <div class="user-credentials__link">
+                            <span>¿Ya eres usuario? <a href="#" id="register-link">Ingresa</a></span>
+                        </div>
+
+
+                    </div>
+
+
+
+
                 </div>
     
 
@@ -82,7 +185,7 @@
 
                             <div class="user-credentials__input-container">
                                 <label class="user-credentials__label">Nombre</label>
-                                <input class="user-credentials__input" name="email" placeholder="Ingresa nombre">
+                                <input class="user-credentials__input" name="name" placeholder="Ingresa nombre">
                             </div>
     
                             <div class="user-credentials__input-container">
@@ -91,7 +194,7 @@
                             </div>
                            
                             <div class="user-credentials__input-container">
-                                <input type="checkbox" name="password" placeholder="Ingresa contraseña">
+                                <input type="checkbox" name="terms">
                                 <label for="terms" >Aceptar términos y condiciones</label>
                             </div>
 

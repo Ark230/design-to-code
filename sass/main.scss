@@ -1,3 +1,12 @@
-@import "base";
+@import "mixins";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
 @import "layout";
+
+@import "components/buttons";
+@import "components/form";
 @import "components";
+
