@@ -1,0 +1,128 @@
+.logo{
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: 4rem;
+
+    @include respond(phone){
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: -1.5rem;
+        margin-top: 5rem;
+        width: 100%;
+       display: none; // cambio a logo
+
+    }
+
+    &--small{
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: -3.5rem;
+        margin-top: 5rem;
+        width: 100%;
+    
+        &--first{
+            font-weight: 600;
+            color: var(--color-primary-harry);
+            background-color: var(--color-primary-hermione);
+            border-radius: 50%;
+            padding: 1.1rem;
+            transform: translateX(3rem)
+    
+        }
+
+        &--second{
+            display: flex;
+            justify-content: flex-end;
+            width: 19.3rem;
+            padding: 1rem;
+            height: fit-content;
+            margin-left: 0;
+            color: var(--color-secondary-dobby);
+            background-color: var(--color-primary-harry);
+            border-radius: 500px;
+        }
+
+    }
+
+
+    &--big{
+        font-size: 7rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: -1.5rem;
+        margin-top: 5rem;
+        width: 100%;
+
+        &--first{
+            position: absolute;
+            font-weight: 600;
+            color: var(--color-primary-harry);
+            background-color: var(--color-primary-hermione);
+            border-radius: 50%;
+            padding: 1.1rem;
+            position: initial;
+            transform: translateX(3rem);
+        }
+
+        &--second{
+            display: flex;
+            justify-content: flex-end;
+            width: 32rem;
+            padding: 1rem;
+            height: fit-content;
+            margin-left: 0;
+            color: var(--color-secondary-dobby);
+            background-color: var(--color-primary-harry);
+            font-weight: 600;
+            border-radius: 500px;
+
+        }
+    }
+
+
+    &--first{
+        position: absolute;
+        font-weight: 600;
+        color: var(--color-primary-harry);
+        background-color: var(--color-primary-hermione);
+        border-radius: 50%;
+        padding: 1.1rem;
+
+        @include respond(phone){
+            position: initial;
+            transform: translateX(3rem)
+
+
+        }
+    }
+
+    &--second{
+        margin-left: 3.8rem;
+        font-weight: 600;
+        display: inline-block;
+        color: var(--color-secondary-dobby);
+        background-color: var(--color-primary-harry);
+        border-radius: 500px;
+        padding: 1.2rem;
+        width: 12rem;
+        
+
+        @include respond(phone){
+            display: flex;
+            justify-content: flex-end;
+            width: 28rem;
+            padding: 1rem;
+            height: fit-content;
+            margin-left: 0;
+
+        }
+        
+        
+    }
+
+}

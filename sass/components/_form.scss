@@ -4,6 +4,9 @@
      font-size: inherit;
      margin-top: 6rem;
 
+     @include respond(phone){
+        font-size: 2rem;
+    }
 
      @include respond(phone){
         margin: 0 auto;
@@ -21,7 +24,21 @@
         margin-bottom: 1rem;
         color: var(--color-primary-harry);
         font-weight: inherit;
+
+        &--2{
+            color: var(--color-primary-hermione);
+        }
     }
+
+
+
+    &__checkbox{
+        transform: scale(1.5);
+        margin-right: 1rem;
+        margin-left: .5rem;
+        
+    }
+
 
     &__forgot-password{
         display: flex;
@@ -31,6 +48,8 @@
         text-align: right;
         margin-bottom: 2rem;
       
+       
+
     }
    
    

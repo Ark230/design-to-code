@@ -1,37 +1,100 @@
 
-.notification-success{
+.notification--success{
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: var(--color-notification-success);
     text-align: center;
     color: var(--color-secondary-dobby);
     font-size: 1.8rem;
-    height: 5rem;
-    transition: transform 1s;
-    animation: notification-deploy 1s ease-in;
-    
+    height: 0;
+    transition-timing-function: ease-in;
+    animation: notification-deploy 5s;
     width: 100%;
     
-   // transition: transform 5s;
+}
+
+.notification-mobile--success{
+    display: flex;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    margin: 0;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-notification-success);
+    text-align: center;
+    color: var(--color-secondary-dobby);
+    height: 8.5rem;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 2rem;
+    
+    // transition-timing-function: ease-in;
+    animation: notification-deploy-bottom 5s ease forwards;
+   // max-width: 80%;
+
+   & > span{
+       
+       max-width: 23rem;
+   }
+    
 }
 
 
-@keyframes notification-deploy{
-        10%{
-            transform: translateY(-60px);
-        }
 
-     
-        100%{
+@keyframes notification-deploy{
+        // 0%{transform: translateY(-60px);}
+
+        // 15%{
+        //     height: 5rem;
+        //     transform: translateY(0px);
             
+        // }
+
+        // 95%{
+        //     height: 5rem;
+        //     // transform: translateY(0px);
+            
+        // }
+        // 100%{
+        //     height: 0;
+        //     transform: translateY(-60px);
+        // }
+        0%{transform: translateY(-60px);}
+
+        30%{
+            height: 5rem;
             transform: translateY(0px);
             
+        }
+
+        55%{
+            height: 5rem;
+            transform: translateY(0px);
+            
+        }
+        100%{
+            height: 0;
+            transform: translateY(-60px);
         }
       
 
 }
+
+@keyframes notification-deploy-bottom{
+
+    0% { transform: translateY(60px); }
+    30% { transform: translateY(0px); }
+    55% { transform: translateY(0px); }
+    100% { transform: translateY(60px); }
+    
+  
+}
+
 
 .login-content{
     display: flex;
@@ -45,17 +108,18 @@
     
     @include respond(phone){
         width: 100%;
-        padding: 2rem;
+        padding: 0;
     }
     
     .user-credentials-mobile{
-        margin-top: 35rem;
+        margin-top: 21rem;
         display: none;
 
         @include respond(phone){
             display: block;
         }
        
+
         :not(button:last-of-type){
             margin-bottom: 2rem;
         }
@@ -67,8 +131,7 @@
         }
 
         &__heading-container{
-            padding: 0 5%;
-            
+            margin-top: 20rem;
             
         }
 
@@ -153,10 +216,6 @@
     }
 }
 
-.hide{
-    display: none !important;
-}
-
 
 .user-credentials{
     display: flex;
@@ -207,6 +266,8 @@
     }
 
 
+  
+
     &__label{
         display: block;
         margin-bottom: 1rem;
@@ -252,7 +313,8 @@
     }
 
     &__icons-container{
-        margin-top: 2rem;
+        margin: 2rem auto;
+        width: 70%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -272,10 +334,11 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        position: absolute;
-        top: 85%;
-        left: 25%;
+        margin-top: 10rem;
+        
+        // position: absolute;
+        // top: 85%;
+        // left: 25%;
         color: var(--color-primary-harry);
         
         span>a{
@@ -286,15 +349,19 @@
         @include respond(phone){
             position: initial;
             font-size: 2rem;
+            margin-top: 0;
         }
     }
 
 }
 
 
-.user-credentials-mobile-sign-in{
+.user-credentials-mobile{
     font-size: 2.5rem;
 
+    @include respond(desktop){
+        display: none;
+    }
 
 
 }
