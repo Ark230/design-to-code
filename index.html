@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <title>Be positivite</title>
 </head>
 
 <body>
-
         <main>
             <div id="notification" class="notification--success hide"><span>Felicidades te haz registrado exitosamente.</span></div>
 
-
-            <div class="login-content">
-                <div class="business-design">
+            <section class="login-content">
+                <section class="business-design">
 
                     <div class="logo">
                         <span class="logo--first">be</span>
@@ -27,7 +25,110 @@
                         <h1 class="heading-primary">Gestiona a tus seguidores de forma segura</h1>
                     </div>
 
+                </section>
+    
+                <section id="section-credentials" class="section-credentials-desktop">
+                    
+                    <div id="grey-overlay-container"></div>
+
+                    <div id="user-credentials-sign-in" class="user-credentials">  
+                    
+                        <div class="user-credentials__container">
+                        
+                            <form class="form" action="#">
+                                <h2 class="heading-secondary">Bienvenido</h2>
+                                <h3 class="heading-tertiary .u-margin-bottom-medium">Inicie sesión ingresando su cuenta aquí</h3>
+                                
+                                <div class="form__group">
+                                    <label required class="form__label">Email/Nombre de usuario</label>
+                                    <input required class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
+                                </div>
+        
+                                <div class="form__group u-position-relative">
+                                    <label required class="form__label">Contraseña</label>
+                                    <input required class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                                    <img name="eye-icon" class="eye-icon" id="eye-1" src="assets/icon-eye.svg" alt="eye icon">
+                                </div>
+        
+                                <a href="#" class="form__forgot-password">¿Olvidaste tu contraseña?</a>
+                            
+                                <div class="form__group">
+                                    <button id="sign-in-button" class="btn btn-primary">Iniciar Sesión</button>
+                                </div>
+                            
+                                <div class="form__social">
+                                    <p>O inicia sesión con otra cuenta</p>
+                                    <div class="form__icons-container">
+                                        <a href="#" class="form__icon"><img src="./assets/icon-apple.svg" alt="apple icon"></a>
+                                        <a href="#" class="form__icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></a>
+                                        <a href="#" class="form__icon"><img src="./assets/icon-google.svg" alt="google icon"></a>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                            <div class="user-credentials__link">
+                                <span>¿Eres un nuevo usuario? <a href="#" id="register-link">Crea una cuenta</a></span>
+                            </div>
+
+                        </div>  
+
+                    </div> 
+
+
+                    <div id="user-credentials-register" class="user-credentials hide">
+                        <div class="user-credentials__container">
+                            <form id="register-form-desktop" class="form" action="#">
+                                <h2 class="heading-secondary u-margin-bottom-small">Registrarse en be positivite</h2>
+                                
+                                <div class="form__group">
+                                    <label class="form__label">Email/Nombre de usuario</label>
+                                    <input  required class="form__input" type="email" name="email" placeholder="Ingresa email o nombre de usuario">
+                                </div>
+
+                                <div class="form__group">
+                                    <label class="form__label">Nombre</label>
+                                    <input  required class="form__input" name="name" placeholder="Ingresa nombre">
+                                </div>
+        
+                                <div class="form__group u-position-relative">
+                                    <label class="form__label">Contraseña</label>
+                                    <input  required class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                                    <img name="eye-icon" class="eye-icon" id="eye-2" src="assets/icon-eye.svg" alt="eye-icon">
+                                </div>
+                            
+                                <div class="form__group">
+                                    <input  required class="form__checkbox" type="checkbox" name="terms">
+                                    <label class="form__label--2" for="terms" >Aceptar términos y condiciones</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <button id="register-button" class="btn btn-primary">Crear una cuenta</button>
+                                </div>
+                                
+        
+                                <div class="form__social">
+                                    <p>O regístrate con otra cuenta</p>
+                                    <div class="form__icons-container">
+                                        <a href="#" class="form__icon"><img src="./assets/icon-apple.svg" alt="apple icon"></a>
+                                        <a href="#" class="form__icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></a>
+                                        <a href="#" class="form__icon"><img src="./assets/icon-google.svg" alt="google icon"></a>
+                                    </div>
+                                </div>
+        
+                            
+                            </form>
+
+                            <div class="user-credentials__link">
+                                <span>¿Ya eres usuario? <a href="#" id="sign-in-link">Ingresa</a></span>
+                            </div>
+
+                        </div>  
+
+                    </div> 
+
+
                     <div id="login-mobile" class="user-credentials-mobile u-padding-every-side-small">
+
 
                         <div class="logo--big">
                             <span class="logo--big--first">be</span>
@@ -37,12 +138,12 @@
 
                         <div class="user-credentials-mobile__heading-container">
                             <h2 class="heading-tertiary">Bienvenido!</h2>
-                            <h3 class="heading-secondary">Conecta con tus seguidores</h3>
+                            <h3 class="heading-secondary u-margin-bottom-medium">Conecta con tus seguidores</h3>
                         </div>
 
                         <div class="user-credentials-mobile__btn-container">
-                            <button class="btn btn-primary">Iniciar Sesión</button>
-                            <button class="btn btn-secondary">Iniciar sesión con otra cuenta</button>
+                            <button class="btn btn-primary" id="sign-in-button-mobile">Iniciar Sesión</button>
+                            <button class="btn btn-secondary" id="sign-in-with-social" onclick="return false;">Iniciar sesión con otra cuenta</button>
                         </div>
 
                         <div class="user-credentials__link">
@@ -53,210 +154,134 @@
                     </div>
 
 
-
                     <div id="user-credentials-mobile-sign-in" class="user-credentials-mobile u-margin-top-medium hide">
-                        
-                        <div class="logo--small u-margin-bottom-medium">
-                            <span class="logo--small--first">be</span>
-                            <span class="logo--small--second">positivite</span>
-                        </div>
-                        
-                        <h3 class="heading-secondary--form--mobile u-margin-bottom-medium ">Inicie sesión para utilizar la aplicación</h3>
-
-                        <form class="form u-margin-bottom-medium" action="#"> 
-                            <div class="form__group">
-                                <label required class="form__label">Email/Nombre de usuario</label>
-                                <input required class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
-                            </div>
-    
-                            <div class="form__group">
-                                <label required class="form__label">Contraseña</label>
-                                <input required class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
-                            </div>
-    
-                            <a href="#" class="form__forgot-password">¿Olvidaste tu contraseña?</a>
-                           
-                            <div class="form__group">
-                                <button id="sign-in-button-2" class="btn btn-tertiary">Iniciar Sesión</button>
-                            </div>
-
-                            <div class="form__group">
-                                <button id="sign-in-button-3" class="btn btn-quaternary">Iniciar sesión con otra cuenta</button>
+                            
+                            <div class="user-credentials__go-back">
+                                    <span id="go-back--1"><</span>
                             </div>
                             
-                        </form>
 
-                        
-                        <div class="user-credentials__link">
-                            <span>¿Eres un nuevo usuario? <a href="#" id="register-link-mobile-2">Crea una cuenta</a></span>
-                        </div>
+                            <div class="logo--small u-margin-bottom-medium">
+                                <span class="logo--small--first">be</span>
+                                <span class="logo--small--second">positivite</span>
+                            </div>
+                            
+                            <h3 class="heading-secondary--form--mobile u-margin-bottom-medium ">Inicie sesión para utilizar la aplicación</h3>
 
-                        <div id="notification-mobile" class="notification-mobile--success hide"><span>Felicidades te haz registrado exitosamente.</span></div>
+                            <form class="form u-margin-bottom-medium" action="#"> 
+                                <div class="form__group">
+                                    <label required class="form__label">Email/Nombre de usuario</label>
+                                    <input required class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
+                                </div>
 
+                                <div class="form__group u-position-relative">
+                                    <label required class="form__label">Contraseña</label>
+                                    <input required class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                                    <img name="eye-icon" class="eye-icon" id="eye-3" src="assets/icon-eye.svg" alt="eye-icon">
+                                </div>
 
+                                <a href="#" class="form__forgot-password">¿Olvidaste tu contraseña?</a>
+                            
+                                <div class="form__group u-margin-top-medium">
+                                    <button id="sign-in-button-2" class="btn btn-tertiary">Iniciar Sesión</button>
+                                </div>
+
+                                <div class="form__group">
+                                    <button id="sign-in-with-social-2" class="btn btn-quaternary" onclick="return false;">Iniciar sesión con otra cuenta</button>
+                                </div>
+                                
+                            </form>
+
+                            <div class="user-credentials__link">
+                                <span>¿Eres un nuevo usuario? <a href="#" id="register-link-mobile-2">Crea una cuenta</a></span>
+                            </div>
+
+                            <div id="notification-mobile" class="notification-mobile--success hide"><span>Felicidades te haz registrado exitosamente.</span></div>
 
                     </div>
 
                     <div id="user-credentials-mobile-register" class="user-credentials-mobile u-margin-top-medium hide">
 
-                         
-                        <div class="logo--small u-margin-bottom-medium">
-                            <span class="logo--small--first">be</span>
-                            <span class="logo--small--second">positivite</span>
-                        </div>
-
-
-                        <h3 class="heading-secondary--form--mobile u-margin-bottom-medium">Registrarse en be positivite</h3>
-
-                        <form id="register-form-mobile" class="form u-margin-bottom-medium" action="#"> 
-                            <div class="form__group">
-                                <label required class="form__label">Email/Nombre de usuario</label>
-                                <input required class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
-                            </div>
-    
-                            <div class="form__group">
-                                <label required class="user-credentials__label">Nombre</label>
-                                <input required class="user-credentials__input" name="name" placeholder="Ingresa nombre">
-                            </div>
-    
-                            <div class="form__group">
-                                <label required class="form__label">Contraseña</label>
-                                <input required class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                            <div class="user-credentials__go-back">
+                                <span id="go-back--2"><</span>
                             </div>
                             
-                            <div class="form__group">
-                                <input required class="form__checkbox" type="checkbox" name="terms">
-                                <label required class="form__label--2" for="terms">Aceptar términos y condiciones</label>
+                            <div class="logo--small u-margin-bottom-medium">
+                                <span class="logo--small--first">be</span>
+                                <span class="logo--small--second">positivite</span>
                             </div>
 
-                            <div class="form__group">
-                                <button id="sign-in-button-2" class="btn btn-tertiary">Crear una cuenta</button>
+
+                            <h3 class="heading-secondary--form--mobile u-margin-bottom-medium">Registrarse en be positivite</h3>
+
+                            <form id="register-form-mobile" class="form u-margin-bottom-medium" action="#"> 
+                                <div class="form__group">
+                                    <label required class="form__label">Email/Nombre de usuario</label>
+                                    <input required class="form__input" name="email" placeholder="Ingresa email o nombre de usuario">
+                                </div>
+
+                                <div class="form__group">
+                                    <label required class="form__label">Nombre</label>
+                                    <input required class="form__input" name="name" placeholder="Ingresa nombre">
+                                </div>
+
+                                <div class="form__group u-position-relative">
+                                    <label required class="form__label">Contraseña</label>
+                                    <input required class="form__input" type="password" name="password" placeholder="Ingresa contraseña">
+                                    <img name="eye-icon" class="eye-icon" id="eye-4" src="assets/icon-eye.svg" alt="eye-icon">
+                                </div>
+                                
+                                <div class="form__group">
+                                    <input required class="form__checkbox" type="checkbox" name="terms">
+                                    <label required class="form__label--2" for="terms">Aceptar términos y condiciones</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <button id="sign-in-button-2" class="btn btn-tertiary">Crear una cuenta</button>
+                                </div>
+
+                                <div class="form__group">
+                                    <button id="register-with-social" class="btn btn-quaternary" onclick="return false;">Registrarse con otra cuenta</button>
+                                </div>
+
+                            </form>
+
+                            <div class="user-credentials__link">
+                                <span>¿Ya eres usuario? <a href="#" id="sign-in-link-mobile">Ingresa</a></span>
                             </div>
 
-                            <div class="form__group">
-                                <button id="sign-in-button-3" class="btn btn-quaternary">Registrarse con otra cuenta</button>
-                            </div>
-
-                        </form>
-
-                        
-                        <div class="user-credentials__link">
-                            <span>¿Ya eres usuario? <a href="#" id="sign-in-link-mobile">Ingresa</a></span>
-                        </div>
-
-
-                        
                     </div>
-
-
-
-
-                </div>
-    
-
-                <div id="user-credentials-sign-in" class="user-credentials">
-                    <div class="user-credentials__container">
                     
-                        <form class="form" action="#">
-                            <h2 class="heading-secondary">Bienvenido</h2>
-                            <h3 class="heading-tertiary">Inicie sesión ingresando su cuenta aquí</h3>
-                            
-                            <div class="form__group">
-                                <label required class="user-credentials__label">Email/Nombre de usuario</label>
-                                <input required class="user-credentials__input" name="email" placeholder="Ingresa email o nombre de usuario">
-                            </div>
-    
-                            <div class="form__group">
-                                <label required class="user-credentials__label">Contraseña</label>
-                                <input required class="user-credentials__input" type="password" name="password" placeholder="Ingresa contraseña">
-                            </div>
-    
-                            <a href="#" class="form__forgot-password">¿Olvidaste tu contraseña?</a>
-                          
-                            <div class="form__group">
-                                 <button id="sign-in-button" class="btn btn-primary">Iniciar Sesión</button>
-                           </div>
-                          
-    
-                            <div class="form__social">
-                                <p>O inicia sesión con otra cuenta</p>
-                                <div class="user-credentials__icons-container">
-                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-apple.svg" alt="apple icon"></a>
-                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></a>
-                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-google.svg" alt="google icon"></a>
-                                </div>
-                            </div>
-    
-                         
-                        </form>
-                        <div class="user-credentials__link">
-                            <span>¿Eres un nuevo usuario? <a href="#" id="register-link">Crea una cuenta</a></span>
-                        </div>
 
-                    </div>  
+                    <span id="settings-menu-btn" class="slide-up-menu-toggle"></span>
 
-                </div> 
-
-
-                <div id="user-credentials-register" class="user-credentials hide">
-                    <div class="user-credentials__container">
-                        <form id="register-form-desktop" class="form" action="#">
-                            <h2 class="heading-secondary u-margin-bottom-small">Registrarse en be positivite</h2>
-                            
-                            
-                            <div class="form__group">
-                                <label class="user-credentials__label">Email/Nombre de usuario</label>
-                                <input  required class="user-credentials__input" type="email" name="email" placeholder="Ingresa email o nombre de usuario">
+                    <nav id="menu-slide-up" class="slide-up-menu">
+                            <div class="slide-up-menu__info u-margin-bottom-small">
+                                <span id="close-slide-up-menu" class="slide-up-menu-close">X</span>
+                                <p>Selecciona tu cuenta</p>
                             </div>
 
-                            <div class="form__group">
-                                <label class="user-credentials__label">Nombre</label>
-                                <input  required class="user-credentials__input" name="name" placeholder="Ingresa nombre">
-                            </div>
-    
-                            <div class="form__group">
-                                <label class="user-credentials__label">Contraseña</label>
-                                <input  required class="user-credentials__input" type="password" name="password" placeholder="Ingresa contraseña">
-                            </div>
-                           
-                            <div class="form__group">
-                                <input  required class="form__checkbox" type="checkbox" name="terms">
-                                <label class="form__label--2" for="terms" >Aceptar términos y condiciones</label>
-                            </div>
+                            <ul class="menu__links" >
+                                
+                                <li><a href="#"><img class="menu__apple-icon" src="./assets/icon-apple.svg" alt="apple icon"><span>Continúa con Apple ID</span></a></li>
+                    
+                                <li><a href="#"><img class="menu__facebook-icon" src="./assets/icon-facebook.svg" alt="facebook icon"><span>Continúa con Facebook</span></a></li>
+                    
+                                <li><a href="#"><img class="menu__google-icon" src="./assets/icon-google.svg" alt="google icon"><span>Continúa con Google</span></a></li>
+                                
+                            </ul>
+                    </nav>
 
-                            <div class="form__group">
-                                <button id="register-button" class="btn btn-primary">Crear una cuenta</button>
-                            </div>
-                            
-    
-                            <div class="form__social">
-                                <p>O regístrate con otra cuenta</p>
-                                 <div class="user-credentials__icons-container">
-                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-apple.svg" alt="apple icon"></a>
-                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></a>
-                                    <a href="#" class="user-credentials__icon"><img src="./assets/icon-google.svg" alt="google icon"></a>
-                                </div>
-                            </div>
-    
-                         
-                        </form>
-
-                        <div class="user-credentials__link">
-                            <span>¿Ya eres usuario? <a href="#" id="sign-in-link">Ingresa</a></span>
-                        </div>
-
-                    </div>  
-
-                </div> 
-
-
-
-            </div>
+                </section>
+            </section>
         
-            
         </main>
-
 
 </body>
 
 </html>
+
+
+
+
+

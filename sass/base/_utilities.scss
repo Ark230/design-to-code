@@ -1,5 +1,4 @@
-
-
+//Margins
 .u-margin-bottom-small{
     margin-bottom: 2rem !important;
 }
@@ -16,11 +15,39 @@
     margin-top: 4rem !important;
 }
 
+.u-margin-top-big{
+    margin-top: 8rem !important;
+}
 
+.u-margin-top-big-2{
+    margin-top: 12rem !important;
+}
+
+//Paddings
 .u-padding-every-side-small{
     padding: 2rem;
 }
+
+//Others
+.u-grey-overlay-mobile{
+    position: fixed;
+    z-index:10;
+    background-color: rgba(0,0,0, 0.4);
+    width: 100%;
+    height: 100%;
+    transition: background .3s linear;
+
+    @include respond(desktop){
+        display: none;
+    }
+
+}
+
 .hide{
     display: none !important;
 }
 
+
+.u-position-relative{
+    position: relative;
+}

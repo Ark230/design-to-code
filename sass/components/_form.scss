@@ -23,20 +23,17 @@
         display: block;
         margin-bottom: 1rem;
         color: var(--color-primary-harry);
-        font-weight: inherit;
+        font-weight: 500;
 
         &--2{
             color: var(--color-primary-hermione);
         }
     }
 
-
-
     &__checkbox{
         transform: scale(1.5);
         margin-right: 1rem;
-        margin-left: .5rem;
-        
+        margin-left: .5rem;   
     }
 
 
@@ -47,9 +44,6 @@
         color: var(--color-primary-harry);
         text-align: right;
         margin-bottom: 2rem;
-      
-       
-
     }
    
    
@@ -93,14 +87,25 @@
         align-items: center;
         min-width: 5rem;
         background-color: rgba(199,202,217,.32);
-   
-   
     }
 
  }
 
+ .eye-icon{
+     width: 24px;
+     height: 24px;
+     position: absolute;
+     top: 55%;
+     left: 90%;
+     cursor: pointer;
+
+     @include respond(phone){
+         width: 20px;
+         height: 20px;
+         top: 60%;
+     }
+ }
 
 
 
- 
 

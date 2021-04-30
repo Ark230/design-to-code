@@ -1,13 +1,18 @@
-@import "mixins";
+@import "abstract/mixins";
 
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
-@import "layout";
+@import "layouts/user-credentials";
+@import "layouts/business-design";
+@import "layouts/section-credentials";
+@import "layouts/login-content";
 
 @import "components/buttons";
 @import "components/form";
 @import "components/logo";
-@import "components";
+@import "components/slide-up-menu";
+@import "components/notifications";
+
 

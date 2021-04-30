@@ -1,7 +1,7 @@
 
 html{
     font-size: 62.5%;
-
+    font-family: "Avenir", Arial;
     @include respond(phone){
         font-size: 50%;
     }
@@ -14,11 +14,13 @@ html{
     @include respond(phone){
         font-size: 3rem;
     }
+
+    
 }
 
 .heading-tertiary{
     color: var(--color-primary-hermione);
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     font-weight: 100;
 
     @include respond(phone){
@@ -41,7 +43,7 @@ html{
 .heading-secondary--form--mobile{
     color: var(--color-primary-hermione);
     margin-bottom: 4rem;
-    font-weight: 100;
+    font-weight: 600;
     margin-left: 10%;
     font-size: 2.2rem;
   
